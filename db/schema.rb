@@ -22,6 +22,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_14_183311) do
     t.datetime "updated_at", null: false
   end
 
+
   create_table "movies", force: :cascade do |t|
     t.string "name"
     t.text "synopsis"
