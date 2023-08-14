@@ -14,3 +14,9 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym "RESTful"
 # end
+
+# Agrega una regla de inflexión personalizada
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+    inflect.irregular 'serie', 'series'
+  end
+  
