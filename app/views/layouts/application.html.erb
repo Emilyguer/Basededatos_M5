@@ -15,12 +15,13 @@
   <body>
   <main class="container">
  <%# header %>
+
  <nav aria-label="breadcrumb">
     <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "DocumentaryFilms", documentary_films_path %></li>
-      <li><%= link_to "Serie", series_path %></li>
-      <li><%= link_to "Movie", movies_path %></li>
+      <li><%= link_to "Home", root_path, class: "custom-link" %></li>
+      <li><%= link_to "DocumentaryFilms", documentary_films_path, class: "custom-link" %></li>
+      <li><%= link_to "Serie", series_path, class: "custom-link" %></li>
+      <li><%= link_to "Movie", movies_path, class: "custom-link" %></li>
     </ul>
   </nav>
 
