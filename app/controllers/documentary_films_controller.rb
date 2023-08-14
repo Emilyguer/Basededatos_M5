@@ -25,7 +25,7 @@ class DocumentaryFilmsController < ApplicationController
 
     respond_to do |format|
       if @documentary_film.save
-        format.html { redirect_to documentary_film_url(@documentary_film), notice: "Documentary film was successfully created." }
+        format.html { redirect_to documentary_films_url(@documentary_film), notice: "Documentary film was successfully created." }
         format.json { render :show, status: :created, location: @documentary_film }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DocumentaryFilmsController < ApplicationController
   def update
     respond_to do |format|
       if @documentary_film.update(documentary_film_params)
-        format.html { redirect_to documentary_film_url(@documentary_film), notice: "Documentary film was successfully updated." }
+        format.html { redirect_to documentary_films_url(@documentary_film), notice: "Documentary film was successfully updated." }
         format.json { render :show, status: :ok, location: @documentary_film }
       else
         format.html { render :edit, status: :unprocessable_entity }

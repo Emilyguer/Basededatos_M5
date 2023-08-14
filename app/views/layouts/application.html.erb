@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+<%# cdn picocss %>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <%# link css %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
   <main class="container">
-  <aside>
-  <nav>
+ <%# header %>
+ <nav aria-label="breadcrumb">
     <ul>
+      <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "DocumentaryFilms", documentary_films_path %></li>
       <li><%= link_to "Serie", series_path %></li>
       <li><%= link_to "Movie", movies_path %></li>
     </ul>
   </nav>
-</aside>
 
     <%= yield %>
     </main>

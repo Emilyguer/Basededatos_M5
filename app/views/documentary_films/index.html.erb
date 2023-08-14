@@ -6,7 +6,7 @@
   <% @documentary_films.each do |documentary_film| %>
     <%= render documentary_film %>
     <p>
-      <%= link_to "Show this documentary film", documentary_film %>
+      <%= link_to "Show this documentary film", new_documentary_film_path %>
     </p>
   <% end %>
 </div>
