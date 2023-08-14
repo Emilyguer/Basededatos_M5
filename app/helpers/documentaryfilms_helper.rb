@@ -1,2 +1,0 @@
-module DocumentaryfilmsHelper
-end

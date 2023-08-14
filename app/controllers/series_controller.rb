@@ -25,7 +25,7 @@ class SeriesController < ApplicationController
 
     respond_to do |format|
       if @serie.save
-        format.html { redirect_to serie_url(@serie), notice: "Serie was successfully created." }
+        format.html { redirect_to series_url(@serie), notice: "Serie was successfully created." }
         format.json { render :show, status: :created, location: @serie }
       else
         format.html { render :new, status: :unprocessable_entity }

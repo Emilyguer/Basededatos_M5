@@ -1,2 +1,0 @@
-class Documentaryfilm < ApplicationRecord
-end
