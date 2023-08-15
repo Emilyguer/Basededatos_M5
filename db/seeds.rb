@@ -6,16 +6,32 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-100.times do |i|
-    Movie.create(name: Faker::Movie.name, synopsis: Faker::Movie.quote, director: Faker::Name.name)
+
+# Importar la biblioteca Faker y definir un bucle que se ejecutará 100 veces
+10.times do |i|
+  # Crear una instancia de la clase "Serie" con atributos generados por Faker
+    Movie.create(
+      name: Faker::Movie.name, 
+      synopsis: Faker::Movie.quote, 
+      director: Faker::Name.name)
   end
 
 
-  100.times do |i|
-    Serie.create(name: Faker::Movie.name, synopsis: Faker::Movie.quote, director: Faker::Name.name)
+# Importar la biblioteca Faker y definir un bucle que se ejecutará 100 veces
+10.times do |i|
+  # Crear una instancia de la clase "Serie" con atributos generados por Faker
+    Serie.create(
+      name: Faker::Movie.name, 
+      synopsis: Faker::Movie.quote, 
+      director: Faker::Name.name)
   end
 
 
-  100.times do |i|
-    DocumentaryFilm.create(name: Faker::Movie.name, synopsis: Faker::Movie.quote, director: Faker::Name.name)
+# Importar la biblioteca Faker y definir un bucle que se ejecutará 100 veces
+10.times do |i|
+  # Crear una instancia de la clase "Serie" con atributos generados por Faker
+    DocumentaryFilm.create(
+      name: Faker::Movie.name, 
+      synopsis: Faker::Movie.quote, 
+      director: Faker::Name.name)
   end

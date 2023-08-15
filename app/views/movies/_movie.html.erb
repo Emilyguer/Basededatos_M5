@@ -1,17 +1,21 @@
-<div id="<%= dom_id movie %>">
-  <p>
+<div class="movie-container">
+
+ <div class="movie-info" id="<%= dom_id movie %>">
+ 
+  <p class="movie-detail">
     <strong>Name:</strong>
     <%= movie.name %>
   </p>
 
-  <p>
+  <p class="movie-detail">
     <strong>Synopsis:</strong>
     <%= movie.synopsis %>
   </p>
 
-  <p>
+ <p class="movie-detail">
     <strong>Director:</strong>
     <%= movie.director %>
   </p>
 
+  </div>
 </div>
